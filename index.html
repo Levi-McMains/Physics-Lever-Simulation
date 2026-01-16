@@ -28,12 +28,12 @@
         }
         
         canvas {
-            display: border-left;
+            display: block;
             background: #f8f9fa;
         }
         
         .button-container {
-            text-align: border-left;
+            text-align: center;
         }
         
         .sim-button {
@@ -168,14 +168,13 @@
 </head>
 <body>
     <div class="main-container">
-        <!-- Left Panel: Simulation and Controls -->
         <div class="left-panel">
             
             <canvas id="leverCanvas" width="750" height="375"></canvas>
             
             <div class="button-container">
                 <button id="simButton" class="sim-button">▶ Start</button>
-                <button id="resetButton" class="sim-button"  margin-left: 5px;>↻ Reset</button>
+                <button id="resetButton" class="sim-button" style="margin-left: 5px;">↻ Reset</button>
                 Time: <span id="timeDisplay">0.00</span> s
             </div>
             
@@ -206,7 +205,6 @@
             </div>
         </div>
         
-        <!-- Right Panel: Math Calculations -->
         <div class="right-panel">
             <div class="math-display">
                 <h5>Angular Motion</h5>
